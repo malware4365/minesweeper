@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="create_scen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: faebd7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minesweeper.IntroController">
+   <children>
+      <TextField fx:id="scen_id" layoutX="33.0" layoutY="62.0" promptText="Scenario-ID" />
+      <TextField fx:id="level" layoutX="33.0" layoutY="119.0" promptText="Difficulty level" />
+      <TextField fx:id="mines" layoutX="33.0" layoutY="183.0" promptText="Number of mines" />
+      <TextField fx:id="time" layoutX="32.0" layoutY="243.0" promptText="Max Time (secs)" />
+      <TextField fx:id="hyper_mine" layoutX="32.0" layoutY="304.0" promptText="Hyper-mine (0 or 1)" />
+      <Button fx:id="createButton" layoutX="364.0" layoutY="331.0" mnemonicParsing="false" onAction="#createButtonClick" text="Create" textAlignment="CENTER" />
+      <Button fx:id="clearButton" layoutX="439.0" layoutY="330.0" mnemonicParsing="false" onAction="#clearButtonClick" text="Clear" textAlignment="CENTER" />
+      <Label layoutX="36.0" layoutY="162.0" text="Enter the number of mines" textAlignment="CENTER" />
+      <Label layoutX="26.0" layoutY="44.0" text="Enter a name for your Scenario-ID" />
+      <Label layoutX="25.0" layoutY="101.0" text="Enter the difficulty level (1 or 2)" />
+      <Label layoutX="34.0" layoutY="225.0" text="Enter the max time (in secs)" />
+      <Label layoutX="25.0" layoutY="286.0" text="Enter if the game will have hyper mine or not" />
+      <TextArea editable="false" layoutX="271.0" layoutY="59.0" prefHeight="201.0" prefWidth="282.0" promptText="testy" text="Game rules:&#10;&#10;Difficulty level 1:&#10;    Mines: 9-11&#10;    Max Time: 120-180 secs&#10;    Hyper-mine: No&#10;&#10;Difficulty level 2:&#10;    Mines: 35-45&#10;    Max Time: 240-360 secs&#10;    Hyper-mine: Yes or No" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="47.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextArea>
+   </children>
+</AnchorPane>
