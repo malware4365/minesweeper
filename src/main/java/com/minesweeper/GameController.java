@@ -84,7 +84,7 @@ public class GameController {
             throw new Exception(e.getMessage());
         }
 
-        //PRINTS THE WHOLE BOARD HAVE TO DELETE IT
+        //Prints the whole board (cheat for the programmer)
         for (int i = 0; i < game.rows; i++) {
             for (int j = 0; j < game.columns; j++) {
                 if (j != game.columns - 1)
