@@ -24,8 +24,8 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Details">
                <items>
-                  <MenuItem fx:id="menuRounds" mnemonicParsing="false" text="Rounds" />
-                  <MenuItem fx:id="menuSolution" mnemonicParsing="false" text="Solution" />
+                  <MenuItem fx:id="IntroMenuRounds" mnemonicParsing="false" onAction="#introRounds" text="Rounds" />
+                  <MenuItem fx:id="menuSolution" disable="true" mnemonicParsing="false" text="Solution" />
                </items>
             </Menu>
          </menus>

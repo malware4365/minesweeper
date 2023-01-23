@@ -31,6 +31,8 @@ public class IntroController {
     @FXML
     MenuItem menuStart;
     @FXML
+    MenuItem IntroMenuRounds;
+    @FXML
     TextField scen_id;
     @FXML
     TextField level;
@@ -133,13 +135,8 @@ public class IntroController {
     }
 
     @FXML
-    public void menuRounds() throws IOException {
-
-    }
-
-    @FXML
-    public void menuSolution() throws IOException {
-
+    public void introRounds() throws IOException {
+        Globals.showRounds();
     }
 
     @FXML
